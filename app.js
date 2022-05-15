@@ -58,6 +58,7 @@ app.get('/create', function(req,res){
 })
 app.get('/feed/:id', function(req,res){
     const requestedId = req.params.id;
+    console.log(requestedId);
     Statment.findOne({_id: requestedId}, function(err, foundStatement){
         if(err){
             console.log(err);
