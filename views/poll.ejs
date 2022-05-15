@@ -1,0 +1,16 @@
+<%- include('partials/nav'); -%>
+<div class="flex h-screen items-center justify-center">
+    <div class="flex w-3/4 mt-4 rounded-lg h-20 border drop-shadow-lg items-center justify-between">
+        <div>
+        <p class="title pl-4 pr-1" id="statement"><%=statement.statement%></p>
+        <p id="obj_id" class="pl-4 text-gray-500 text-sm">Poll Id:</p>
+        <p id="obj_id" class="pl-4 text-gray-500 text-sm"><%=statement.id%></p>
+
+        </div>
+        <div class="mr-4 text-white">
+        <a href="/feed/<%=statement._id%>/upvote" id="upvote" class="p-4 rounded-lg bg-green-400"><i class="pr-1 fa-solid fa-arrow-up"></i><%=statement.upvotes%></a>
+        <a href="/feed/<%=statement._id%>/downvote" id="downvote" class="p-4 rounded-lg bg-red-400"><i class="pr-1 fa-solid fa-arrow-down"></i><%=statement.downvotes%></a>
+        </div>
+    </div>
+</div>
+<%- include('partials/foot'); -%>

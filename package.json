@@ -1,0 +1,29 @@
+{
+  "name": "voteme",
+  "version": "1.0.0",
+  "description": "Voting Site!",
+  "main": "app.js",
+  "scripts": {
+    "build-css": "npx tailwindcss -i src/input.css -o public/output.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/REGEX777/VoteMe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/REGEX777/VoteMe/issues"
+  },
+  "homepage": "https://github.com/REGEX777/VoteMe#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.7",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.3",
+    "path": "^0.12.7",
+    "socket.io": "^4.5.0",
+    "tailwindcss": "^3.0.24"
+  }
+}

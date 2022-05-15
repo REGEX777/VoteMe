@@ -1,0 +1,10 @@
+<%- include('partials/nav'); -%>
+<div class="flex flex-col h-screen items-center justify-center">
+    <div class="flex h-screen items-center justify-center">
+        <form action="/create" method="post" class="flex h-max grid-cols-2 flex-col items-center justify-center gap-4">
+        <input type="text" class="t-1 block w-80 space-y-1 rounded-md border border-slate-300 bg-white px-3 py-2 placeholder-slate-400 shadow-sm drop-shadow-md focus:border-sky-500 focus:outline-none focus:ring-1 focus:ring-sky-500 sm:text-sm" id="statement" name="statement" placeholder="Enter Your Statment" />
+        <button class="w-100 h-9 w-32 rounded-md bg-red-500 text-zinc-50 drop-shadow-lg" type="submit">Submit</button>
+        </form>
+      </div>
+</div>
+<%- include('partials/foot'); -%>
