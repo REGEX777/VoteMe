@@ -87,7 +87,7 @@ app.post('/create', function(req,res){
         }
     });
 
-    res.redirect('/create')
+    res.redirect('/feed')
 })
 
 
