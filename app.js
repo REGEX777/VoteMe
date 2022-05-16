@@ -63,6 +63,7 @@ app.get('/feed/:id', function(req,res){
         if(err){
             console.log(err);
         }else{
+            console.log(foundStatement)
             res.render('poll', {statement: foundStatement});
         }
     })
