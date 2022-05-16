@@ -1,14 +1,14 @@
 <%- include('partials/nav'); -%>
-<div class="flex flex-col items-center justify-center md:block md:shrink"">
+<div class="flex flex-col items-center justify-center">
     <% statement.forEach(function(statement) { %>
     <div class="flex w-3/4 mt-4 rounded-lg h-20 border drop-shadow-lg items-center justify-between">
-        <p class="title pl-4 text-xs sm:pr-1" id="statement"><%=statement.statement%></p>
+        <p class="title pl-4 sm:text-lg sm:pr-1" id="statement"><%=statement.statement%></p>
 
-        <div class="mr-4 text-white">
-        <a href="/feed/<%=statement._id%>" class="p-2 sm:p-4 rounded-lg text-xs bg-green-400"><i class="pr-1 fa-solid fa-arrow-up"></i><%=statement.upvotes%></a>
-        <a href="/feed/<%=statement._id%>" id="downvote" class="p-2 sm:p-4 rounded-lg text-xs bg-red-400"><i class="pr-1 fa-solid fa-arrow-down"></i><%=statement.downvotes%></a>
+        <div class="mr-4 text-white flex items-center">
+        <a href="/feed/<%=statement._id%>" class="p-2 sm:p-4 rounded-l-lg text-xs bg-green-400"><i class="pr-1 fa-solid fa-arrow-up"></i><%=statement.upvotes%></a>
+        <a href="/feed/<%=statement._id%>" id="downvote" class="p-2 sm:p-4 text-xs bg-red-400"><i class="pr-1 fa-solid fa-arrow-down"></i><%=statement.downvotes%></a>
 
-        <a href="/feed/<%=statement._id%>" class="p-1 mt-3 text-xs sm:p-4 rounded-lg bg-green-400"></i>Vote Now!</a>
+        <a href="/feed/<%=statement._id%>" class="whitespace-nowrap p-1 sm:text-xs sm:p-4 rounded-r-lg bg-green-400"></i>Vote Now!</a>
         </div>
     </div>
     <% }); %>
