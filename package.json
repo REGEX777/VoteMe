@@ -4,7 +4,8 @@
   "description": "Voting Site!",
   "main": "app.js",
   "scripts": {
-    "build-css": "npx tailwindcss -i src/input.css -o public/output.css --watch"
+    "build-css": "npx tailwindcss -i src/input.css -o public/output.css --watch",
+    "start": "node ."
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,7 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/REGEX777/VoteMe/issues"
+
   },
   "homepage": "https://github.com/REGEX777/VoteMe#readme",
   "dependencies": {
