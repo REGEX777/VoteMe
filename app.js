@@ -5,7 +5,6 @@ const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose')
 
-//body parser initialization
 
 const app = express();
 app.set('view engine', 'ejs');
