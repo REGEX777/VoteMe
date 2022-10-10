@@ -81,7 +81,7 @@ app.post('/create', function(req,res){
         if(err){
             console.log(err);
         }else{
-            console.log('Data was added to db succesfully.')
+            console.log('Data registered to db succesfully.')
         }
     });
 
